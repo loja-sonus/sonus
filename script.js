@@ -1,4 +1,4 @@
-var email = "kevincomercialdrop@gmail.com";
+var email = "suportesonus@gmail.com";
 
 function copiarEmail(){
 
