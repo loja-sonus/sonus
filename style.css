@@ -1,0 +1,101 @@
+
+:root{
+    --background-img: url(./imagens/bg-mobile.jpg);
+    --text-color: white;
+    --bg-links: rgba(255, 255, 255, 0.1);
+    --bg-links-hover: rgba(255, 255, 255, 0.05);
+    --bg-media-hover: rgba(255, 255, 255, 0.2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background: var(--background-img) no-repeat top center/cover;
+    height: 100vh;
+}
+body *{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--text-color);;
+    
+}
+#title{
+    text-align: center;
+    font-size: 70px;
+    
+}
+#container{
+    width: 100%;
+    max-width: 580px;
+    margin: 56px auto 0;
+    padding: 0 24px;
+}
+
+#links ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 8px;
+    padding: 24px 0;
+}
+#links ul li a{
+    display: flex;
+    font-size: 20px;
+    border: 1px solid gray;
+    text-decoration: none;
+    padding: 16px 24px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    background: var(--bg-links);
+    font-weight: 500;
+    transition: background 0.4s;
+}
+#links ul li a:hover{
+    border: 1.5px solid var(--text-color);
+    background-color: var(--bg-links-hover);
+}
+#social-media{
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    
+}
+#social-media a{
+    display: flex;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 16px;
+    transition: background 0.2s;
+}
+#social-media button{
+    font-size: 50px;
+    background: none;
+    border: none;
+    display: flex;
+    text-align: center;
+    border-radius: 50%;
+    padding: 16px;
+    transition: background 0.2s;
+}
+#social-media button:hover{
+    background: var(--bg-media-hover);
+}
+#social-media a:hover{
+    background: var(--bg-media-hover);
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 14px;
+    font-size: 20px;
+}
